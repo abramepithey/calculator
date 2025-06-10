@@ -9,3 +9,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.case {
+    padding: 15px;
+    flex: 1;
+    max-width: 300px;
+    max-height: 500px;
+    aspect-ratio: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aqua;
+    border-radius: 15px;
+}
