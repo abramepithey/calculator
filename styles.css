@@ -34,3 +34,11 @@ body {
     flex-wrap: wrap;
     gap: 5px;
 }
+
+.key {
+    flex: 1 0 21%;
+    font-weight: bold;
+    font-size: 30pt;
+    border: 2px solid black;
+    border-radius: 10px;
+}
