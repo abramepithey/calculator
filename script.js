@@ -25,3 +25,14 @@ let addCharacter = function(currentNumber, char) {
         return char;
     return currentNumber + char;
 }
+
+let renderDisplay = function(firstNum, secondNum, operand) {
+    let inputs = [];
+    if (secondNum)
+        inputs.push(secondNum);
+    if (operand)
+        inputs.push(operand);
+    if (firstNum)
+        inputs.push(firstNum);
+    display.value = inputs.join(" ");
+}
