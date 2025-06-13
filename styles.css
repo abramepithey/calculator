@@ -12,10 +12,8 @@ body {
 
 .case {
     padding: 15px;
-    flex: 1;
+    flex: 0;
     max-width: 300px;
-    max-height: 500px;
-    aspect-ratio: 3 / 5;
     display: flex;
     flex-direction: column;
     gap: 10px;
