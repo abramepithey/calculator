@@ -1,7 +1,3 @@
-let firstNum = 0;
-let secondNum;
-let operand;
-
 const add = function(num1, num2) {
     return num1 + num2;
 };
@@ -17,3 +13,9 @@ const multiply = function(num1, num2) {
 const divide = function(num1, num2) {
     return Number((num1 / num2).toFixed(5));
 };
+
+let display = document.getElementById("display");
+
+let firstNum = display.value;
+let secondNum;
+let operand;
