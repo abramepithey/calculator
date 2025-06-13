@@ -47,6 +47,7 @@ body {
 }
 
 .small-key {
+    flex: 0;
     font-weight: bold;
     font-size: 14pt;
     border: 2px solid black;
@@ -55,7 +56,8 @@ body {
 }
 
 .display {
-    flex: 12;
+    flex: 1;
+    width: 200px;
     text-align: right;
     font-weight: bold;
     font-size: 30pt;
