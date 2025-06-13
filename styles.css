@@ -46,6 +46,12 @@ body {
     background-color: rgb(240, 240, 240);
 }
 
+.small-key-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
 .small-key {
     flex: 0;
     font-weight: bold;
