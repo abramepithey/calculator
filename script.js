@@ -36,3 +36,12 @@ let renderDisplay = function(firstNum, secondNum, operand) {
         inputs.push(firstNum);
     display.value = inputs.join(" ");
 }
+
+let numbers = document.querySelectorAll(".digit");
+numbers.forEach(element => element.addEventListener("click", event => {
+    if (operand)
+        secondNum = addCharacter(secondNum, element.innerText);
+    else
+        firstNum = addCharacter(firstNum, element.innerText);
+    renderDisplay(firstNum, secondNum, operand);
+}));
