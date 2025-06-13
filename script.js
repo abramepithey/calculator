@@ -19,3 +19,9 @@ let display = document.getElementById("display");
 let firstNum = display.value;
 let secondNum;
 let operand;
+
+let addCharacter = function(currentNumber, char) {
+    if (currentNumber == 0)
+        return char;
+    return currentNumber + char;
+}
