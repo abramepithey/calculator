@@ -47,10 +47,18 @@ body {
 }
 
 .small-key {
-    flex: 1;
+    font-weight: bold;
+    font-size: 14pt;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(220, 220, 220);
 }
 
 .display {
     flex: 12;
     text-align: right;
+    font-weight: bold;
+    font-size: 30pt;
+    border: 2px solid black;
+    border-radius: 10px;
 }
