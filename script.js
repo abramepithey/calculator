@@ -30,7 +30,7 @@ let addCharacter = function(currentNumber, char) {
     return currentNumber + char;
 }
 
-let renderDisplay = function(firstNum, secondNum, operand) {
+let renderDisplay = function() {
     let inputs = [];
     if (firstNum)
         inputs.push(firstNum);
@@ -47,5 +47,5 @@ numbers.forEach(element => element.addEventListener("click", event => {
         secondNum = addCharacter(secondNum, element.innerText);
     else
         firstNum = addCharacter(firstNum, element.innerText);
-    renderDisplay(firstNum, secondNum, operand);
+    renderDisplay();
 }));
