@@ -28,12 +28,12 @@ let addCharacter = function(currentNumber, char) {
 
 let renderDisplay = function(firstNum, secondNum, operand) {
     let inputs = [];
-    if (secondNum)
-        inputs.push(secondNum);
-    if (operand)
-        inputs.push(operand);
     if (firstNum)
         inputs.push(firstNum);
+    if (operand)
+        inputs.push(operand);
+    if (secondNum)
+        inputs.push(secondNum);
     display.value = inputs.join(" ");
 }
 
