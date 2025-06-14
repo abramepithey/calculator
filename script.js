@@ -49,3 +49,10 @@ numbers.forEach(element => element.addEventListener("click", event => {
         firstNum = addCharacter(firstNum, element.innerText);
     renderDisplay();
 }));
+
+let operators = document.querySelectorAll(".operator");
+operators.forEach(element => element.addEventListener("click", event => {
+    operand = element.innerText;
+    secondNum = "0";
+    renderDisplay();
+}));
