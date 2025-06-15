@@ -53,6 +53,16 @@ let calculate = function() {
 }
 
 let addCharacter = function(currentNumber, char) {
+    if (char === ".") {
+        if (currentNumber.includes("."))
+            return currentNumber;
+        if (!currentNumber || Number(currentNumber) === 0)
+            return "0.";
+    }
+    if (char === "." && (!currentNumber || Number(currentNumber) === 0))
+        return "0.";
+    if (Number(currentNumber) === 0 && currentNumber.includes("."))
+        return currentNumber + char;
     if (!currentNumber)
         return char;
     if (currentNumber.length === 9)
