@@ -122,3 +122,8 @@ let clearButton = document.getElementById("clear");
 clearButton.addEventListener("click", event => {
     clear();
 });
+
+let backspaceButton = document.getElementById("backspace");
+backspaceButton.addEventListener("click", event => {
+    backspace();
+});
