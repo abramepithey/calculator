@@ -19,6 +19,38 @@ let display = document.getElementById("display");
 let firstNum = display.value;
 let secondNum;
 let operand;
+let justCalculated = false;
+let defaultDisplay = true;
+
+let calculate = function() {
+    if (!firstNum || !secondNum || !operand)
+        return;
+
+    let tempNum;
+    if (operand === "+")
+        tempNum = add(firstNum, secondNum);
+    else if (operand === "-")
+        tempNum = subtract(firstNum, secondNum);
+    else if (operand === "*")
+        tempNum = multiply(firstNum, secondNum);
+    else {
+        if (Number(secondNum) === 0) {
+            tempNum = "DON'T DO THAT";
+            defaultDisplay = true;
+        }
+        else
+            tempNum = divide(firstNum, secondNum);
+    }
+    if (!defaultDisplay)
+        firstNum = String(Number(tempNum.toFixed(5)));
+    else
+        firstNum = tempNum;
+
+    secondNum = "";
+    operand = "";
+    renderDisplay();
+    justCalculated = true;
+}
 
 let addCharacter = function(currentNumber, char) {
     if (!currentNumber)
