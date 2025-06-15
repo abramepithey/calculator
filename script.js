@@ -64,3 +64,8 @@ operators.forEach(element => element.addEventListener("click", event => {
     secondNum = "0";
     renderDisplay();
 }));
+
+let clearButton = document.getElementById("clear");
+clearButton.addEventListener("click", event => {
+    clear();
+});
