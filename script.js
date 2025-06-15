@@ -85,8 +85,14 @@ let numbers = document.querySelectorAll(".digit");
 numbers.forEach(element => element.addEventListener("click", event => {
     if (operand)
         secondNum = addCharacter(secondNum, element.innerText);
-    else
+    else {
+        if (justCalculated) {
+            clear();
+            justCalculated = false;
+        }
         firstNum = addCharacter(firstNum, element.innerText);
+    }
+    defaultDisplay = false;
     renderDisplay();
 }));
 
