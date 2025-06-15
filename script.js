@@ -113,10 +113,21 @@ numbers.forEach(element => element.addEventListener("click", event => {
 
 let operators = document.querySelectorAll(".operator");
 operators.forEach(element => element.addEventListener("click", event => {
+    if (defaultDisplay)
+        return;
+
+    if (firstNum && operand && secondNum)
+        calculate();
+
     operand = element.innerText;
-    secondNum = "0";
+    secondNum = "";
     renderDisplay();
 }));
+
+let equals = document.getElementById("equals");
+equals.addEventListener("click", event => {
+    calculate();
+});
 
 let clearButton = document.getElementById("clear");
 clearButton.addEventListener("click", event => {
