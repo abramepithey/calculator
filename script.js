@@ -81,6 +81,21 @@ let clear = function() {
     defaultDisplay = true;
 }
 
+let backspace = function() {
+    if (defaultDisplay || justCalculated)
+        clear();
+    else if (secondNum)
+        secondNum = secondNum.substring(0, secondNum.length -1);
+    else if (operand)
+        operand = "";
+    else if (firstNum)
+        firstNum = firstNum.substring(0, firstNum.length -1);
+    if (!firstNum)
+        clear();
+    else
+        renderDisplay();
+}
+
 let numbers = document.querySelectorAll(".digit");
 numbers.forEach(element => element.addEventListener("click", event => {
     if (operand)
