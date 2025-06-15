@@ -41,6 +41,14 @@ let renderDisplay = function() {
     display.value = inputs.join(" ");
 }
 
+let clear = function() {
+    firstNum = "0";
+    secondNum = "";
+    operand = "";
+    renderDisplay();
+    defaultDisplay = true;
+}
+
 let numbers = document.querySelectorAll(".digit");
 numbers.forEach(element => element.addEventListener("click", event => {
     if (operand)
