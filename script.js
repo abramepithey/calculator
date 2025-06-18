@@ -141,6 +141,10 @@ numbers.forEach(element => document.addEventListener("keydown", event => {
 
 let operators = document.querySelectorAll(".operator");
 operators.forEach(element => element.addEventListener("click", () => addOperator(element)));
+operators.forEach(element => document.addEventListener("keydown", event => {
+    if (event.key === element.innerText)
+        addOperator(element);
+}));
 
 let equals = document.getElementById("equals");
 equals.addEventListener("click", event => {
