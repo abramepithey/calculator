@@ -134,6 +134,10 @@ let addOperator = function(element) {
 
 let numbers = document.querySelectorAll(".digit");
 numbers.forEach(element => element.addEventListener("click", () => addDigit(element)));
+numbers.forEach(element => document.addEventListener("keydown", event => {
+    if (event.key === element.innerText)
+        addDigit(element);
+}));
 
 let operators = document.querySelectorAll(".operator");
 operators.forEach(element => element.addEventListener("click", () => addOperator(element)));
@@ -152,3 +156,7 @@ let backspaceButton = document.getElementById("backspace");
 backspaceButton.addEventListener("click", event => {
     backspace();
 });
+
+// document.addEventListener("keydown", event => {
+//     if (event.key === )
+// });
