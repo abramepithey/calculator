@@ -90,3 +90,7 @@ button:hover {
     background-color: #F2E7DD;
     color: #292421;
 }
+
+.display:focus {
+    outline: none;
+}
