@@ -160,7 +160,3 @@ let backspaceButton = document.getElementById("backspace");
 backspaceButton.addEventListener("click", event => {
     backspace();
 });
-
-// document.addEventListener("keydown", event => {
-//     if (event.key === )
-// });
