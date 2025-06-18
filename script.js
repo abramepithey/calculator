@@ -148,6 +148,10 @@ operators.forEach(element => document.addEventListener("keydown", event => {
 
 let equals = document.getElementById("equals");
 equals.addEventListener("click", () => calculate());
+document.addEventListener("keydown", event => {
+    if (event.key === "=" || event.key === "Enter")
+        calculate();
+});
 
 let clearButton = document.getElementById("clear");
 clearButton.addEventListener("click", () => clear());
