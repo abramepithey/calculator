@@ -19,6 +19,7 @@ body {
     gap: 5px;
     background-color: #D9b99F;
     border-radius: 15px;
+    box-shadow: 3px 3px 10px #292421;
 }
 
 .display-row {
@@ -45,6 +46,7 @@ button:hover {
     flex: 1 0 21%;
     font-weight: bold;
     font-size: 30pt;
+    box-shadow: 3px 3px 10px #292421;
     border: none;
     border-radius: 10px;
     background-color: #F2D6CE;
@@ -72,6 +74,7 @@ button:hover {
     border: none;
     border-radius: 8px;
     background-color: #F2D6CE;
+    box-shadow: 3px 3px 10px #292421;
     color: #292421;
 }
 
@@ -88,6 +91,7 @@ button:hover {
     border: none;
     border-radius: 10px;
     background-color: #F2E7DD;
+    box-shadow: 3px 3px 10px #292421;
     color: #292421;
 }
 
