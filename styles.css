@@ -33,6 +33,10 @@ body {
     gap: 5px;
 }
 
+button {
+    transition: background-color 0.2s ease-in-out;
+}
+
 .key {
     flex: 1 0 21%;
     font-weight: bold;
@@ -44,6 +48,10 @@ body {
 
 .key.digit {
     background-color: #BAE0DA;
+}
+
+.key.digit:hover {
+    background-color: #7A958F;
 }
 
 .small-key-column {
@@ -59,6 +67,10 @@ body {
     border: 2px solid black;
     border-radius: 8px;
     background-color: #F2D6CE;
+}
+
+.small-key:hover, .key:hover {
+    background-color: #CA8E82;
 }
 
 .display {
