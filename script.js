@@ -162,3 +162,7 @@ document.addEventListener("keydown", event => {
 
 let backspaceButton = document.getElementById("backspace");
 backspaceButton.addEventListener("click", () => backspace());
+document.addEventListener("keydown", event => {
+    if (event.key === "Backspace")
+        backspace();
+});
