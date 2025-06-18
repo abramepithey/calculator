@@ -147,16 +147,10 @@ operators.forEach(element => document.addEventListener("keydown", event => {
 }));
 
 let equals = document.getElementById("equals");
-equals.addEventListener("click", event => {
-    calculate();
-});
+equals.addEventListener("click", () => calculate());
 
 let clearButton = document.getElementById("clear");
-clearButton.addEventListener("click", event => {
-    clear();
-});
+clearButton.addEventListener("click", () => clear());
 
 let backspaceButton = document.getElementById("backspace");
-backspaceButton.addEventListener("click", event => {
-    backspace();
-});
+backspaceButton.addEventListener("click", () => backspace());
