@@ -155,6 +155,10 @@ document.addEventListener("keydown", event => {
 
 let clearButton = document.getElementById("clear");
 clearButton.addEventListener("click", () => clear());
+document.addEventListener("keydown", event => {
+    if (event.key === "c")
+        clear();
+});
 
 let backspaceButton = document.getElementById("backspace");
 backspaceButton.addEventListener("click", () => backspace());
