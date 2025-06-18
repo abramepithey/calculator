@@ -48,6 +48,7 @@ button:hover {
     border: 2px solid black;
     border-radius: 10px;
     background-color: #F2D6CE;
+    color: #292421;
 }
 
 .key.digit {
@@ -71,6 +72,7 @@ button:hover {
     border: 2px solid black;
     border-radius: 8px;
     background-color: #F2D6CE;
+    color: #292421;
 }
 
 .small-key:hover, .key:hover {
@@ -86,4 +88,5 @@ button:hover {
     border: 2px solid black;
     border-radius: 10px;
     background-color: #F2E7DD;
+    color: #292421;
 }
