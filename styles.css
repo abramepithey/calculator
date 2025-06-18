@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: aqua;
+    background-color: #D9b99F;
     border-radius: 15px;
 }
 
@@ -39,11 +39,11 @@ body {
     font-size: 30pt;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: rgb(220, 220, 220);
+    background-color: #F2D6CE;
 }
 
 .key.digit {
-    background-color: rgb(240, 240, 240);
+    background-color: #BAE0DA;
 }
 
 .small-key-column {
@@ -58,7 +58,7 @@ body {
     font-size: 14pt;
     border: 2px solid black;
     border-radius: 8px;
-    background-color: rgb(220, 220, 220);
+    background-color: #F2D6CE;
 }
 
 .display {
@@ -69,4 +69,5 @@ body {
     font-size: 26pt;
     border: 2px solid black;
     border-radius: 10px;
+    background-color: #F2E7DD;
 }
