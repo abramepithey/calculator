@@ -106,8 +106,7 @@ let backspace = function() {
         renderDisplay();
 }
 
-let numbers = document.querySelectorAll(".digit");
-numbers.forEach(element => element.addEventListener("click", event => {
+let addDigit = function(element) {
     if (operand)
         secondNum = addCharacter(secondNum, element.innerText);
     else {
@@ -119,7 +118,10 @@ numbers.forEach(element => element.addEventListener("click", event => {
     }
     defaultDisplay = false;
     renderDisplay();
-}));
+}
+
+let numbers = document.querySelectorAll(".digit");
+numbers.forEach(element => element.addEventListener("click", () => addDigit(element)));
 
 let operators = document.querySelectorAll(".operator");
 operators.forEach(element => element.addEventListener("click", event => {
