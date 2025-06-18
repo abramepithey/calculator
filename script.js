@@ -120,11 +120,7 @@ let addDigit = function(element) {
     renderDisplay();
 }
 
-let numbers = document.querySelectorAll(".digit");
-numbers.forEach(element => element.addEventListener("click", () => addDigit(element)));
-
-let operators = document.querySelectorAll(".operator");
-operators.forEach(element => element.addEventListener("click", event => {
+let addOperator = function(element) {
     if (defaultDisplay)
         return;
 
@@ -134,7 +130,13 @@ operators.forEach(element => element.addEventListener("click", event => {
     operand = element.innerText;
     secondNum = "";
     renderDisplay();
-}));
+}
+
+let numbers = document.querySelectorAll(".digit");
+numbers.forEach(element => element.addEventListener("click", () => addDigit(element)));
+
+let operators = document.querySelectorAll(".operator");
+operators.forEach(element => element.addEventListener("click", () => addOperator(element)));
 
 let equals = document.getElementById("equals");
 equals.addEventListener("click", event => {
